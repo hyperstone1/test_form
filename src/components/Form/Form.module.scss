@@ -1,0 +1,185 @@
+.container {
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.returnMain {
+  padding: 60px 0 0 10px;
+  display: flex;
+  p {
+    margin: 0;
+    margin-left: 10px;
+    margin-top: -2px;
+  }
+}
+.login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  a {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 0.01em;
+    color: #009cb4;
+  }
+  .autorization {
+    font-family: 'Manrope';
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    color: #231f20;
+    margin-bottom: 40px;
+  }
+
+  form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .formContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .containerInput {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0;
+        flex-direction: column-reverse;
+        .error {
+          text-align: center;
+        }
+        input:focus ~ label,
+        textarea:focus ~ label,
+        label:focus {
+          color: #009cb4;
+        }
+        input:focus {
+          border: 2px solid #009cb4;
+          padding: 15px 16px;
+        }
+        textarea:focus {
+          border: 2px solid #009cb4;
+          padding: 18px;
+        }
+      }
+      .textarea {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+        textarea {
+          resize: none;
+          height: 100px;
+          padding: 20px;
+          outline: none;
+          border: none;
+          border-radius: 5px;
+          background: #f6f6f9;
+        }
+      }
+    }
+
+    input {
+      padding: 17px 18px;
+      width: 300px;
+      gap: 10px;
+      background: #f6f6f9;
+      border: none;
+      font-weight: 500;
+      font-size: 14px;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    ::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      color: #c6c6c6;
+    }
+    label {
+      padding-top: 20px;
+      padding-bottom: 5px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #676a71;
+      text-align: center;
+    }
+    .remMeLabel {
+      margin-left: 14px;
+    }
+    .remMeInput {
+      margin: 0 0 21px 0;
+    }
+    .butLogin {
+      width: 60%;
+      margin: 0 auto;
+      padding: 16px 0px;
+      gap: 10px;
+      background: #009cb4;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #01b8d4;
+      }
+      &:active {
+        background-color: #01bedb;
+      }
+    }
+    .forgotPass {
+      margin: 20px 0 40px 0;
+      text-align: center;
+      color: #009cb4;
+    }
+  }
+  .resOk {
+    margin-top: 25px;
+    color: rgb(49, 219, 86);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .resErr {
+    margin-top: 25px;
+    color: red;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .autorizationWith {
+    p {
+      margin-top: 0;
+      padding: 16px 0px;
+      text-align: center;
+      text-decoration-line: underline;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid #009cb4;
+        border-radius: 5px;
+        padding: 14px 0px;
+        color: #009cb4;
+      }
+    }
+  }
+  .withoutAcc {
+    p {
+      text-align: center;
+    }
+    a {
+    }
+  }
+}
