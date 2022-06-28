@@ -62,10 +62,9 @@ export default function Input({
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     switch (e.target.name) {
       case 'name':
-        setName(uppercase(e.target.value));
-        console.log(e.target.value);
-        console.log(name);
-        if (!regName.test(String(e.target.value).toLowerCase())) {
+        let inputValue: string = uppercase(e.target.value);
+        setName(inputValue);
+        if (!regName.test(String(inputValue).toLowerCase())) {
           setNameError('Некорректные имя и фамилия.');
           if (!e.target.value) {
             setNameError('Имя и фамилия не могут быть пустыми.');
